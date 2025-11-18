@@ -30,6 +30,7 @@ form{
     background-color: #ffffff;
     padding: 15px;
     border-radius: 20px;
+    margin-bottom: 100px;
 }
 fieldset{
     padding: 15px;
@@ -60,8 +61,50 @@ textarea{
     min-height: 100px;
 }
 
-input [type="color"]{
+input[type="color"]{
     width: 40px;
     padding: 0 5px;
 }
+
+p{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"]:required:invalid,
+input[type="number"]:required:invalid,
+input[type="email"]:required:invalid,
+#name:required:invalid{
+    border-color: red;
+    
+}
+
+input[type="text"]:required:valid,
+input[type="number"]:required:valid,
+input[type="email"]:required:valid,
+#name:required:valid{
+    border-color: green;   
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover{
+    background-color: red;
+    color: #ffffff;
+}
+
+
 
