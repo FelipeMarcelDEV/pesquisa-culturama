@@ -50,6 +50,27 @@ label{
     margin-bottom: 5px;
 }
 
+
+/* ZERA a margem inferior de 20px no input[type="tel"] forçando a especificidade */
+.campo-telefone input[type="tel"] {
+    margin-bottom: 0 !important; 
+}
+
+/* ZERA a margem inferior do small para que ele não empurre o elemento seguinte */
+small{
+    /* Zera a margem inferior */
+    margin-bottom: 0; 
+    
+    /* Controla apenas o espaçamento superior do small */
+    margin-top: 5px; 
+    display: block; /* Mude para 'block' ou 'inline-block' para respeitar margin-top */
+}
+
+/* Aplique a margem que você deseja na div que contém os campos. */
+.campo-telefone {
+    margin-bottom: 20px; /* Essa margem vai controlar o espaçamento total do bloco */
+}
+
 input:not([type="radio"]):not([type="checkbox"]):not([type="color"]),select, textarea{
     width: 100%;
     padding: 10px;

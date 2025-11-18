@@ -32,10 +32,14 @@
             <br> 
             <label for="email">E-mail</label>
             <input id="email" type="email" name="userEmail" required>
-            <br> 
+            
             <label for="phonenumber">Telefone</label>
-            <input id="phonenumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaço">
-            <br> 
+            <div class="campo-telefone">
+            <input id="phonenumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaço" aria-describedby="phoneHelp">
+            <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + Número sem espaços</small>
+            </div>
+            <br>
+        
             <label for="userimage">Upload de Foto</label>
             <input id="userimage" type="file" accept="image/*" name="userImage">
             <br> 
