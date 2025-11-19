@@ -50,25 +50,9 @@ label{
     margin-bottom: 5px;
 }
 
-
-/* ZERA a margem inferior de 20px no input[type="tel"] forçando a especificidade */
-.campo-telefone input[type="tel"], 
-.campo-upload[type="file"], #userimage {  margin-bottom: 0 !important; 
-}
-
-/* ZERA a margem inferior do small para que ele não empurre o elemento seguinte */
-small{
-    /* Zera a margem inferior */
-    margin-bottom: 0; 
-    
-    /* Controla apenas o espaçamento superior do small */
-    margin-top: 0px; 
-    display: block; /* Mude para 'block' ou 'inline-block' para respeitar margin-top */
-}
-
-/* Aplique a margem que você deseja na div que contém os campos. */
-.campo-telefone {
-    margin-bottom: 10px; /* Essa margem vai controlar o espaçamento total do bloco */
+input[type="tel"],
+input[type="file"]{
+    margin-bottom: 0 !important;
 }
 
 input:not([type="radio"]):not([type="checkbox"]):not([type="color"]),select, textarea{
